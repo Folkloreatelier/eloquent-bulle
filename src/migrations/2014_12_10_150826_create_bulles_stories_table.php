@@ -12,7 +12,7 @@ class CreateBullesStoriesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create(Config::get('bulle::table_prefix').'stories', function(Blueprint $table)
+		Schema::create(Config::get('eloquent-bulle::table_prefix').'stories', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('slug');
@@ -32,7 +32,7 @@ class CreateBullesStoriesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop(Config::get('bulle::table_prefix').'stories');
+		Schema::drop(Config::get('eloquent-bulle::table_prefix').'stories');
 	}
 
 }

@@ -12,7 +12,7 @@ class CreateBullesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create(Config::get('bulle::table_prefix').'bulles', function(Blueprint $table)
+		Schema::create(Config::get('eloquent-bulle::table_prefix').'bulles', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('type');
@@ -33,7 +33,7 @@ class CreateBullesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('bulles');
+		Schema::drop(Config::get('eloquent-bulle::table_prefix').'bulles');
 	}
 
 }
