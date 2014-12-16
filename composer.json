@@ -1,5 +1,5 @@
 {
-    "name": "folklore/bulle",
+    "name": "folklore/eloquent-bulle",
     "description": "",
     "authors": [
         {
@@ -18,7 +18,7 @@
             "src/migrations"
         ],
         "psr-0": {
-            "Folklore\\Bulle\\": "src/"
+            "Folklore\\EloquentBulle\\": "src/"
         }
     },
     "minimum-stability": "stable"

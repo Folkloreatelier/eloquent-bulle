@@ -1,4 +1,4 @@
-<?php namespace Folklore\Bulle;
+<?php namespace Folklore\EloquentBulle;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class BulleServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('folklore/bulle', 'bulle');
+		$this->package('folklore/eloquent-bulle', 'eloquent-bulle');
 		
 		$this->app->register('Folklore\EloquentMediatheque\MediathequeServiceProvider');
 		$this->app->register('Cviebrock\EloquentSluggable\SluggableServiceProvider');

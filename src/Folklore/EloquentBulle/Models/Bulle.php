@@ -1,4 +1,4 @@
-<?php namespace Folklore\Bulle\Models;
+<?php namespace Folklore\EloquentBulle\Models;
 
 use Folklore\EloquentMediatheque\Traits\WritableTrait;
 use Folklore\EloquentMediatheque\Traits\PicturableTrait;

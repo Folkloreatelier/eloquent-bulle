@@ -1,4 +1,4 @@
-<?php namespace Folklore\Bulle\Models;
+<?php namespace Folklore\EloquentBulle\Models;
 
 use Cviebrock\EloquentSluggable\SluggableInterface;
 use Cviebrock\EloquentSluggable\SluggableTrait;
