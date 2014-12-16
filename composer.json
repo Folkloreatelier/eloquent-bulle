@@ -10,7 +10,7 @@
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "4.2.*",
-		"folklore/eloquent-mediatheque": "0.1.*",
+		"folklore/eloquent-mediatheque": "dev-master",
         "cviebrock/eloquent-sluggable": "2.*"
     },
     "autoload": {
