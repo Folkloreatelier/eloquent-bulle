@@ -38,6 +38,23 @@ class Story extends Model implements SluggableInterface
     }
     
     /**
+     * Accessors and mutators
+     */
+    protected function getSettingsAttribute($value)
+    {
+        if(empty($value))
+        {
+            return array();
+        }
+        return is_string($value) ? json_decode($value):$value;
+    }
+    
+    protected function setSettingsAttribute($value)
+    {
+        $this->attributes['settings'] = is_array($value) ? json_encode($value):$value;
+    }
+    
+    /**
      *
      * Sync methods
      *

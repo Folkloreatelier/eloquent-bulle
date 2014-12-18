@@ -29,13 +29,16 @@ class Bulle extends Model implements SluggableInterface
         'save_to'    => 'slug',
     );
     
+    /**
+     * Accessors and mutators
+     */
     protected function getSettingsAttribute($value)
     {
         if(empty($value))
         {
             return array();
         }
-        return is_string($value) ? json_decode($value,true):$value;
+        return is_string($value) ? json_decode($value):$value;
     }
     
     protected function setSettingsAttribute($value)
