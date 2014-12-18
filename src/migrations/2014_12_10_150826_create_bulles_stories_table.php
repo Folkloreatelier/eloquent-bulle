@@ -15,6 +15,7 @@ class CreateBullesStoriesTable extends Migration {
 		Schema::create(Config::get('eloquent-bulle::table_prefix').'stories', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('name');
 			$table->string('type');
 			$table->string('slug');
 			$table->longText('settings');

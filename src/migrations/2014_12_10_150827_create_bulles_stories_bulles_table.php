@@ -18,6 +18,7 @@ class CreateBullesStoriesBullesTable extends Migration {
 			$table->integer('story_id')->unsigned();
 			$table->integer('bulle_id')->unsigned();
 			$table->smallInteger('bulle_order')->unsigned();
+			$table->longText('settings');
 			$table->timestamps();
 			
 			$table->index('story_id');

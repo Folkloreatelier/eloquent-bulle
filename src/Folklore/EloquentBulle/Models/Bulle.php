@@ -18,13 +18,14 @@ class Bulle extends Model implements SluggableInterface
     protected $dates = ['deleted_at','updated_at','created_at'];
     
     protected $fillable = array(
+        'name',
         'type',
         'slug',
         'settings'
     );
     
     protected $sluggable = array(
-        'build_from' => 'type',
+        'build_from' => 'name',
         'save_to'    => 'slug',
     );
     
